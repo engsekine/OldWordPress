@@ -1,0 +1,278 @@
+@charset "utf-8";
+
+//ブレイクポイント設定
+$max-lg: 1024px; // PC
+$max-md: 767px; // タブレット
+$max-sm: 480px; // スマホ
+$min-lg: 1025px; // PC
+$min-md: 768px; // タブレット
+$min-sm: 481px; // スマホ
+
+@mixin max-lg {
+  @media (max-width: ($max-lg)) {
+    @content;
+  }
+}
+
+@mixin min-lg {
+  @media (min-width: ($min-lg)) {
+    @content;
+  }
+}
+
+@mixin max-md {
+  @media (max-width: ($max-md)) {
+    @content;
+  }
+}
+
+@mixin min-md {
+  @media (min-width: ($min-md)) {
+    @content;
+  }
+}
+
+@mixin max-sm {
+  @media (max-width: ($max-sm)) {
+    @content;
+  }
+}
+
+@mixin min-sm {
+  @media (min-width: ($min-sm)) {
+    @content;
+  }
+}
+
+@mixin display-flex {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+}
+
+@mixin justify-content-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@mixin align-items-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@mixin flex-wrap-wrap {
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+}
+
+@mixin justify-content-space-between {
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+}
+
+@mixin mincho {
+  font-family: 'Noto Serif JP', serif;
+  letter-spacing: 0.05em;
+}
+
+//色設定
+
+$bg-color: #fff;
+
+
+
+
+.archive-page {
+	&__inner {
+		max-width: 1160px;
+		width: 96%;
+		margin: 0 auto;
+		@include max-lg {
+			padding: 0 2%;
+		}
+	}
+}
+
+.archive-page-title {
+    padding: 40px 0 0;
+	@include max-lg {
+		padding: 4% 0 0;
+	}
+	h1 {
+		font-size: 3rem;
+		text-align: center;
+		letter-spacing: 0.1em;
+		font-weight: bold;
+		text-shadow: 0 0 20px #fff;
+		@include max-sm {
+			font-size: 2.8rem;
+		}
+	}
+}
+
+
+.archive-page {
+	background-color: $bg-color;
+  .archive-page-engineer_life {
+    padding: 60px 0 100px;
+	  @include display-flex;
+    @include max-lg {
+      padding: 6% 0 10%;
+    }
+	  @include max-md {
+		  display: block;
+	  }
+
+    &__box {
+		width: 70%;
+		@include max-md {
+			width: 100%;
+		}
+      &--cnt {
+		  border: 1px solid #000;
+        background-color: #fff;
+        box-sizing: border-box;
+        padding: 40px;
+			  margin-bottom: 40px;
+
+        @include max-lg {
+          padding: 4%;
+			margin-bottom: 4%;
+        }
+		  @include max-md {
+			  padding: 4% 4% 6%;
+		  }
+
+        &--inner {
+          > h3 {
+            text-align: left;
+            margin-bottom: 20px;
+
+            @include max-lg {
+              margin-bottom: 2%;
+            }
+          }
+
+          &--date {
+            display: block;
+            text-align: right;
+            margin-bottom: 20px;
+			  font-size: 1rem;
+            @include max-lg {
+              margin-bottom: 2%;
+            }
+          }
+
+          &--img {
+            width: 100%;
+            height: 300px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+			  @include max-md {
+				  height: 40vw;
+			  }
+          }
+
+          &--article {
+            padding: 40px 0;
+            box-sizing: border-box;
+            @include max-lg {
+              padding: 4% 0;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+.archive-page {
+	background-color: $bg-color;
+  .archive-page-blog {
+    padding: 60px 0 100px;
+	  @include display-flex;
+    @include max-lg {
+      padding: 6% 0 10%;
+    }
+	  @include max-md {
+		  display: block;
+	  }
+
+    &__box {
+		width: 70%;
+		@include max-md {
+			width: 100%;
+		}
+      &--cnt {
+		  border: 1px solid #000;
+        background-color: #fff;
+        box-sizing: border-box;
+        padding: 40px;
+			  margin-bottom: 40px;
+
+        @include max-lg {
+          padding: 4%;
+			margin-bottom: 4%;
+        }
+		  @include max-md {
+			  padding: 4% 4% 6%;
+		  }
+
+        &--inner {
+          > h3 {
+            text-align: left;
+            margin-bottom: 20px;
+
+            @include max-lg {
+              margin-bottom: 2%;
+            }
+          }
+
+          &--date {
+            display: block;
+            text-align: right;
+            margin-bottom: 20px;
+			  font-size: 1rem;
+            @include max-lg {
+              margin-bottom: 2%;
+            }
+          }
+
+          &--img {
+            width: 100%;
+            height: 300px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+			  @include max-md {
+				  height: 40vw;
+			  }
+          }
+
+          &--article {
+            padding: 40px 0;
+            box-sizing: border-box;
+            @include max-lg {
+              padding: 4% 0;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+

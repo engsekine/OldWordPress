@@ -1,0 +1,408 @@
+@charset "utf-8";
+.single-page h1 {
+  font-size: 2.4rem;
+  color: #004876;
+  border: 2px solid #004876;
+  border-width: 2px 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.single-page h2 {
+  padding: 10px;
+  border-left: 4px solid #004876;
+  /*background: #f4f4f4;*/
+  font-size: 2.2rem;
+}
+@media (max-width: 480px) {
+  .single-page h2 {
+    font-size: 2rem;
+  }
+}
+.single-page h3 {
+  font-size: 2rem;
+  border-left: 6px double #004876;
+  padding: 0 10px;
+}
+@media (max-width: 480px) {
+  .single-page h3 {
+    font-size: 1.8rem;
+  }
+}
+.single-page h4 {
+  font-size: 1.8rem;
+  border-left: 4px dashed #004876;
+  padding: 0 10px;
+}
+@media (max-width: 480px) {
+  .single-page h4 {
+    font-size: 1.6rem;
+  }
+}
+.single-page h5 {
+  font-size: 1.6rem;
+  border-left: 4px solid #004876;
+  padding: 0 10px;
+}
+@media (max-width: 480px) {
+  .single-page h5 {
+    font-size: 1.6rem;
+  }
+}
+.single-page p {
+  letter-spacing: 0;
+  line-height: 1.8em;
+}
+.single-page strong {
+  background: none;
+  font-weight: bold;
+}
+.single-page .font-big {
+  font-size: 2rem;
+  margin-bottom: 10%;
+}
+@media (max-width: 480px) {
+  .single-page .font-big {
+    font-size: 1.6rem;
+  }
+}
+.single-page__inner {
+  max-width: 1160px;
+  width: 96%;
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .single-page__inner {
+    padding: 0 2%;
+  }
+}
+@media (max-width: 480px) {
+  .single-page__inner {
+    width: 92%;
+  }
+}
+.single-page-title {
+  padding: 40px 0 0;
+}
+@media (max-width: 1024px) {
+  .single-page-title {
+    padding: 4% 0 0;
+  }
+}
+.single-page-title h1 {
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  text-shadow: 0 0 20px #fff;
+}
+@media (max-width: 480px) {
+  .single-page-title h1 {
+    font-size: 2.8rem;
+  }
+}
+.single-page {
+  background-color: #fff;
+}
+.single-page .single-page-blog {
+  padding: 60px 0 100px;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+}
+@media (max-width: 1024px) {
+  .single-page .single-page-blog {
+    padding: 6% 0 10%;
+  }
+}
+@media (max-width: 767px) {
+  .single-page .single-page-blog {
+    display: block;
+  }
+}
+.single-page .single-page-blog__box {
+  width: 70%;
+}
+@media (max-width: 767px) {
+  .single-page .single-page-blog__box {
+    width: 100%;
+  }
+}
+.single-page .single-page-blog__box--cnt {
+  border: 1px solid #000;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+@media (max-width: 1024px) {
+  .single-page .single-page-blog__box--cnt {
+    padding: 4%;
+    margin-bottom: 4%;
+  }
+}
+@media (max-width: 767px) {
+  .single-page .single-page-blog__box--cnt {
+    padding: 4% 4% 6%;
+  }
+}
+.single-page .single-page-blog__box--cnt > h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 1024px) {
+  .single-page .single-page-blog__box--cnt > h3 {
+    margin-bottom: 2%;
+  }
+}
+.single-page .single-page-blog__box--cnt--date {
+  display: block;
+  text-align: right;
+  margin-bottom: 6%;
+  font-size: 1.4rem;
+}
+.single-page .single-page-blog__box--cnt--img {
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 2%;
+}
+@media (max-width: 767px) {
+  .single-page .single-page-blog__box--cnt--img {
+    height: 40vw;
+  }
+}
+.single-page .single-page-blog__box--cnt--article {
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+@media (max-width: 1024px) {
+  .single-page .single-page-blog__box--cnt--article {
+    padding: 4% 0;
+  }
+}
+.single-page {
+  background-color: #fff;
+}
+.single-page .single-page-engineer_life {
+  padding: 60px 0 100px;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+}
+@media (max-width: 1024px) {
+  .single-page .single-page-engineer_life {
+    padding: 6% 0 10%;
+  }
+}
+@media (max-width: 767px) {
+  .single-page .single-page-engineer_life {
+    display: block;
+  }
+}
+.single-page .single-page-engineer_life__box {
+  width: 70%;
+}
+@media (max-width: 767px) {
+  .single-page .single-page-engineer_life__box {
+    width: 100%;
+  }
+}
+.single-page .single-page-engineer_life__box--cnt {
+  border: 1px solid #000;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+@media (max-width: 1024px) {
+  .single-page .single-page-engineer_life__box--cnt {
+    padding: 4%;
+    margin-bottom: 4%;
+  }
+}
+@media (max-width: 767px) {
+  .single-page .single-page-engineer_life__box--cnt {
+    padding: 4% 4% 6%;
+  }
+}
+.single-page .single-page-engineer_life__box--cnt > h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 1024px) {
+  .single-page .single-page-engineer_life__box--cnt > h3 {
+    margin-bottom: 2%;
+  }
+}
+.single-page .single-page-engineer_life__box--cnt--date {
+  display: block;
+  text-align: right;
+  margin-bottom: 2%;
+  font-size: 1.4rem;
+}
+.single-page .single-page-engineer_life__box--cnt--img {
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 2%;
+}
+@media (max-width: 767px) {
+  .single-page .single-page-engineer_life__box--cnt--img {
+    height: 40vw;
+  }
+}
+.single-page .single-page-engineer_life__box--cnt--article {
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+@media (max-width: 1024px) {
+  .single-page .single-page-engineer_life__box--cnt--article {
+    padding: 4% 0;
+  }
+}
+.get-page {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  margin-bottom: 10%;
+}
+.get-page__prev {
+  display: block;
+  text-align: left;
+}
+.get-page__prev > a {
+  display: inline-block;
+  font-size: 1.6rem;
+  border: 2px #004876 solid;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.get-page__next {
+  display: block;
+  text-align: right;
+}
+.get-page__next > a {
+  display: inline-block;
+  font-size: 1.6rem;
+  border: 2px #004876 solid;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.single-page__list {
+  box-sizing: border-box;
+  padding: 6%;
+  background-color: #eee;
+  border: 1px solid #004876;
+  margin-bottom: 6%;
+}
+.single-page__list > span {
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: 2%;
+  padding: 0;
+  position: relative;
+  padding-left: 2em;
+  margin-left: 2%;
+  font-weight: bold;
+  color: #004876;
+}
+@media (max-width: 480px) {
+  .single-page__list > span {
+    font-size: 1.8rem;
+  }
+}
+.single-page__list > span::before {
+  position: absolute;
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  font-weight: bold;
+  font-size: 2.2rem;
+  left: 0;
+}
+@media (max-width: 480px) {
+  .single-page__list > span::before {
+    font-size: 1.8rem;
+  }
+}
+.single-page__list li {
+  line-height: 2em;
+  position: relative;
+  padding-left: 2em;
+  font-weight: bold;
+  color: #004876;
+  font-size: 2.2rem;
+}
+@media (max-width: 480px) {
+  .single-page__list li {
+    font-size: 1.6rem;
+    padding-left: 1em;
+  }
+}
+.single-page__list li::before {
+  position: absolute;
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  font-weight: bold;
+  font-size: 2.2rem;
+  left: 0;
+}
+@media (max-width: 480px) {
+  .single-page__list li::before {
+    font-size: 1.6rem;
+  }
+}
+.single-page [id] {
+  padding-top: 60px;
+  margin-top: -60px;
+}
+.single-page__inner > div h1 {
+  margin-bottom: 8%;
+}
+.single-page__inner > div h2 {
+  margin-bottom: 8%;
+}
+.single-page__inner > div h3 {
+  margin-bottom: 8%;
+}
+.single-page__inner > div h4 {
+  margin-bottom: 8%;
+}
+.single-page__inner > div h5 {
+  margin-bottom: 8%;
+}
+.single-page__inner > div p {
+  margin-bottom: 6%;
+}
+@media (min-width: 768px) {
+  .single-page__inner > div p {
+    padding-left: 2%;
+  }
+}
+.single-page h1, .single-page h2, .single-page h3, .single-page h4, .single-page h5, .single-page h6, .single-page p, .single-page strong, .single-page a {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+@media (max-width: 480px) {
+  .single-page .single-page__list li {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .single-page p {
+    font-size: 16px;
+    line-height: 2em;
+    letter-spacing: 0.02em;
+  }
+}
